@@ -17,8 +17,6 @@ func GZipToTar(inp io.Reader) (*tar.Reader, error) {
 	return tarReader, nil
 }
 
-var err error
-
 // FileFunc is the function that should be called on files
 type FileFunc func(name string, r io.Reader) error
 
